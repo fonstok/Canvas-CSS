@@ -13,11 +13,12 @@ Just follow these steps to enable:
   ```
 ![Screenshot](gifs/HTMLmode.gif) 
 
-3. Make sure all your content is inside this div.
+3. Make sure all of the content (present or future) is inside this div.
     
 ## The Options
  
 ### Banners
+Heading 2 tags can be converted to banners with icons by adding the following classes.
 ```html
 <h2 class="icon-h lesson">Lessons</h2>
 <h2 class="icon-h project">Project</h2>
