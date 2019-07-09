@@ -3,16 +3,16 @@ Maryville Design & Visual Art Program's CSS files for Canvas CMS
 
 ## Set Up
 Just follow these steps to enable:
-
-1. Add a surrounding div element around all the content with the class, dva.
+1. In Canvas, edit the content in html mode. 
+2. Add a surrounding div element around all the content with the class, dva.
 
     ```html
     <div class="dva">
-      <!-- content goes here  -->
+      <!-- all content goes here  -->
     </div>
     ```
 
-2. Make sure all the content is inside this div.
+3. Make sure all your content is inside this div.
     
 ## The Options
  
