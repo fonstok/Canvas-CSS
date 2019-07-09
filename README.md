@@ -3,7 +3,8 @@ Maryville Design & Visual Art Program's CSS files for Canvas CMS
 
 ## Set Up
 Just follow these steps to enable:
-1. In Canvas, edit the content in html mode. 
+1. In Canvas, edit the content in html mode.
+![Screenshot](gifs/HTMLmode.gif) 
 2. Add a surrounding div element around all the content with the class, dva.
 
     ```html
