@@ -35,7 +35,7 @@ Just follow these steps to enable:
 ### Full Bleed Video
 
 1. Make sure you're in HTML mode, and the set up above has been established.
-2. Add a surrounding div element around all the content with the class, **video**.
+2. Add a  div element to be wrapped around the video embed with the class, **video**.
 3. Add the embed iframe from the video service. 
 4. Remove any width and height attributes
 ```html
