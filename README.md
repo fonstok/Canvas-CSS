@@ -8,7 +8,7 @@ Just follow these steps to enable:
 
   ```html
     <div class="dva">
-      <!-- all content goes inside here  -->
+      <!-- all of the content goes inside here  -->
     </div>
   ```
 ![Screenshot](gifs/HTMLmode.gif) 
