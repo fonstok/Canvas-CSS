@@ -9,7 +9,7 @@ Just follow these steps to enable:
 
     ```html
     <div class="dva">
-      <!-- all content goes here  -->
+      <!-- all content goes inside here  -->
     </div>
     ```
 
