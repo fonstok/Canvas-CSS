@@ -150,3 +150,16 @@
 
 .dva .line-top {
   border-top: dotted 1px #000; }
+
+.dva .video {
+  position: relative;
+  padding-top: 56.25%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border: 4px solid #999999; }
+  .dva .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
