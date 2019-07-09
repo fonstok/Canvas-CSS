@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i");
+* {
+  font-family: "Lato", "Helvetica Neue"; }
+
+.dva > *:first-child {
+  margin-top: 0px;
+  border-top: none; }
+
+.dva .icon-h {
+  background-color: #eee;
+  position: relative;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  border-top: none;
+  font-weight: normal;
+  line-height: 90%;
+  border-radius: 5px; }
+
+.dva .icon-h:before {
+  content: "x";
+  float: left;
+  background-color: #830a0a;
+  padding: 5px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; }
+
+.dva .reading:before {
+  content: url(http://dva.musites.org/icons/book.svg); }
+
+.dva .assignment:before {
+  content: url(http://dva.musites.org/icons/bookmark.svg); }
+
+.dva .task:before {
+  content: url(http://dva.musites.org/icons/pen-nib.svg); }
+
+.dva .requirement:before {
+  content: url(http://dva.musites.org/icons/check.svg); }
+
+.dva .submit:before {
+  content: url(http://dva.musites.org/icons/get-app.svg); }
+
+.dva .objective:before {
+  content: url(http://dva.musites.org/icons/bullseye.svg); }
+
+.dva .respond:before {
+  content: url(http://dva.musites.org/icons/chat.svg); }
+
+.dva .post:before {
+  content: url(http://dva.musites.org/icons/pencil-alt.svg); }
+
+.dva .quiz:before {
+  content: url(http://dva.musites.org/icons/rocket.svg); }
+
+.dva .lesson:before {
+  content: url(http://dva.musites.org/icons/speaker-notes.svg); }
+
+.dva .project:before {
+  content: url(http://dva.musites.org/icons/paint-brush.svg); }
+
+.dva .reply:before {
+  content: url(http://dva.musites.org/icons/chat.svg);
+  transform: scale(-1, 1); }
+
+.dva p,
+.dva h1,
+.dva h3,
+.dva h4,
+.dva h5,
+.dva h6 {
+  margin-top: 0px; }
+
+.dva ul,
+.dva ol,
+.dva table {
+  margin-top: 0px; }
+
+.dva ul, .dva ol {
+  color: #40485a; }
+
+.dva ul {
+  list-style-type: none; }
+
+.dva li {
+  margin-bottom: 12px; }
+
+.dva ul li::before {
+  content: "\2B1D";
+  color: #bbb;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  transform: translateY(-2px); }
+
+.dva table,
+.dva td {
+  border-collapse: collapse;
+  border: 1px #ddd solid;
+  margin-bottom: 20px; }
+
+.dva table {
+  width: 90%;
+  font-size: 85%; }
+  .dva table td {
+    padding: 10px; }
+  .dva table td p {
+    margin: 0px;
+    margin-bottom: 10px;
+    line-height: 150%; }
+  .dva table td p:last-child {
+    margin-bottom: 0px; }
+
+.dva p {
+  font-size: 105%; }
+
+.dva p,
+.dva li {
+  line-height: 180%; }
+
+.dva h1,
+.dva h2,
+.dva h3,
+.dva h4,
+.dva h5,
+.dva h6 {
+  margin-top: 48px;
+  font-weight: normal;
+  margin-bottom: 20px; }
+
+.dva h2 {
+  border-top: solid #ccc 2px;
+  padding: 15px 0px;
+  line-height: 100%;
+  margin-top: 80px; }
+
+.dva h3 {
+  text-transform: uppercase; }
+
+.dva ul,
+.dva ol,
+.dva p {
+  margin-bottom: 26px; }
+
+.dva .line-top {
+  border-top: dotted 1px #000; }
