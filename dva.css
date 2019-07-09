@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i");
-* {
-  font-family: "Lato", "Helvetica Neue"; }
-
 .dva > *:first-child {
   margin-top: 0px;
   border-top: none; }
@@ -30,7 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border: 2px solid #fff; }
 
 .dva .reading:before {
   content: url(http://dva.musites.org/icons/book.svg); }
@@ -83,7 +80,7 @@
   margin-top: 0px; }
 
 .dva ul, .dva ol {
-  color: #40485a; }
+  color: #495369; }
 
 .dva ul {
   list-style-type: none; }
