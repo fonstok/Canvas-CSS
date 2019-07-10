@@ -79,7 +79,7 @@ Banners can be identified by icon.
 
 #### Colors
 The medallion can be four colors
-* red - is default
+* red - is default and does not have to be identified.
 * charcoal
 * silver
 * gold
