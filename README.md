@@ -13,7 +13,7 @@ Just follow these steps to enable:
   ```
 ![Screenshot](gifs/HTMLmode.gif) 
 
-3. Make sure all of the content **(present or future)** is inside (between the opening **`<div class="dva"`>** and closing **`</div>`**) this div.
+3. Make sure all of the content **(present or future)** is "inside" or between the opening **`<div class="dva"`>** and closing **`</div>`** of this div.
     
 ## The Classes
 ### Banners
