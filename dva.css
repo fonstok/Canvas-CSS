@@ -43,6 +43,15 @@
   border-radius: 50%;
   border: 2px solid #fff; }
 
+.dva .charcoal:before {
+  background-color: #333; }
+
+.dva .gold:before {
+  background-color: #c19c0b; }
+
+.dva .silver:before {
+  background-color: #7590a2; }
+
 .dva .reading:before, .dva .book:before {
   content: url(http://dva.musites.org/icons/book.svg); }
 
