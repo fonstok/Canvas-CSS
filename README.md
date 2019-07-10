@@ -13,12 +13,12 @@ Just follow these steps to enable:
   ```
 ![Screenshot](gifs/HTMLmode.gif) 
 
-3. Make sure all of the content **(present or future)** is inside this div.
+3. Make sure all of the content **(present or future)** is inside (between the opening **`<div class="dva"`>** and closing **`</div>`**) this div.
     
- 
-## Banners
+## The Classes
+### Banners
 Heading 2 tags can be converted to banners with icons by adding the following classes.
-
+#### Category Type
 Banners can be identified by category. 
 ```html
 <h2 class="icon-h lesson">Lessons</h2>
@@ -34,6 +34,7 @@ Banners can be identified by category.
 <h2 class="icon-h assignment">Assignments</h2>
 <h2 class="icon-h reading">Readings</h2>
 ```
+#### By Icon
 Banners can be identified by icon. 
 ```html
 <h2 class="icon-h book">Book</h2>
@@ -64,7 +65,7 @@ Banners can be identified by icon.
 </div>
 ```
 
-## Tip Good Bad Table
+### Tip Good Bad Table
 ```html
 <table class="tbg">
   <tr>
