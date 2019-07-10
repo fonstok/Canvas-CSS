@@ -13,10 +13,12 @@ Just follow these steps to enable:
   ```
 ![Screenshot](gifs/HTMLmode.gif) 
 
-3. Make sure all your content is inside this div.
+3. Make sure all of the content **(present or future)** is inside this div.
     
  
 ## Banners
+Heading 2 tags can be converted to banners with icons by adding the following classes.
+
 Banners can be identified by category. 
 ```html
 <h2 class="icon-h lesson">Lessons</h2>
@@ -48,7 +50,6 @@ Banners can be identified by icon.
 <h2 class="icon-h chat-left">Chat-left</h2>
 ```
 ## Full Bleed Video
-
 1. Make sure you're in HTML mode, and the set up above has been established.
 2. Add a  div element to be wrapped around the video embed with the class, **video**.
 3. Add the embed iframe from the video service. 
