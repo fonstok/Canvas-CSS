@@ -1,4 +1,5 @@
 .dva > * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .dva > *:first-child {
@@ -11,7 +12,11 @@
   padding: 10px;
   padding-bottom: 10px;
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-top: none;
   font-weight: normal;
@@ -26,8 +31,14 @@
   margin-right: 10px;
   width: 40px;
   height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
   border: 2px solid #fff; }
@@ -36,7 +47,7 @@
   background-color: #333; }
 
 .dva .gold:before {
-  background-color: #c0a436; }
+  background-color: #b49720; }
 
 .dva .silver:before {
   background-color: #7590a2; }
@@ -61,6 +72,8 @@
 
 .dva .respond:before, .dva .chat:before {
   content: url(http://dva.musites.org/icons/chat.svg);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .dva .post:before, .dva .pencil:before {
@@ -106,6 +119,8 @@
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
   transform: translateY(-2px); }
 
 .dva table,
