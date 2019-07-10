@@ -19,7 +19,20 @@ Just follow these steps to enable:
 ### Banners
 Heading 2 tags can be converted to banners with icons by adding the following classes.
 #### Category Type
-Banners can be identified by category. 
+Banners can be identified by category.
+* lesson
+* project
+* quiz
+* post
+* reply 
+* respond
+* objective
+* task
+* submit
+* requirement
+* assignment
+* reading 
+
 ```html
 <h2 class="icon-h lesson">Lessons</h2>
 <h2 class="icon-h project">Project</h2>
@@ -35,8 +48,21 @@ Banners can be identified by category.
 <h2 class="icon-h reading">Readings</h2>
 ```
 #### By Icon
-Banners can be identified by icon. 
+Banners can be identified by icon.
+* book
+* bookmark
+* pen-nib
+* check
+* get
+* bullseye
+* chat
+* pencil
+* rocket
+* notes
+* chat-left
+* brush
 ```html
+
 <h2 class="icon-h book">Book</h2>
 <h2 class="icon-h bookmark">Bookmark</h2>
 <h2 class="icon-h pen-nib">Pen-nib</h2>
@@ -50,6 +76,21 @@ Banners can be identified by icon.
 <h2 class="icon-h brush">Brush</h2>
 <h2 class="icon-h chat-left">Chat-left</h2>
 ```
+
+#### Colors
+The medallion can be four colors
+* red - is default
+* charcoal
+* silver
+* gold
+
+```html
+<h2 class="icon-h brush">default red</h2>
+<h2 class="icon-h lesson charcoal">charcoal</h2>
+<h2 class="icon-h project gold">gold</h2>
+<h2 class="icon-h quiz silver">silver</h2>
+```
+
 ### Full Bleed Video
 1. Make sure you're in HTML mode, **and the set up above has been established**.
 2. Add a  div element to be wrapped around the video embed with the class, **video**.
