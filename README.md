@@ -13,12 +13,11 @@ Just follow these steps to enable:
   ```
 ![Screenshot](gifs/HTMLmode.gif) 
 
-3. Make sure all of the content (present or future) is inside this div.
+3. Make sure all your content is inside this div.
     
-## The Options
  
-### Banners
-Heading 2 tags can be converted to banners with icons by adding the following classes.
+## Banners
+Banners can be identified by category. 
 ```html
 <h2 class="icon-h lesson">Lessons</h2>
 <h2 class="icon-h project">Project</h2>
@@ -33,7 +32,22 @@ Heading 2 tags can be converted to banners with icons by adding the following cl
 <h2 class="icon-h assignment">Assignments</h2>
 <h2 class="icon-h reading">Readings</h2>
 ```
-### Full Bleed Video
+Banners can be identified by icon. 
+```html
+<h2 class="icon-h book">Book</h2>
+<h2 class="icon-h bookmark">Bookmark</h2>
+<h2 class="icon-h pen-nib">Pen-nib</h2>
+<h2 class="icon-h check">Check</h2>
+<h2 class="icon-h get">Get</h2>
+<h2 class="icon-h bullseye">Bullseye</h2>
+<h2 class="icon-h chat">Chat</h2>
+<h2 class="icon-h pencil">Pencil</h2>
+<h2 class="icon-h rocket">Rocket</h2>
+<h2 class="icon-h notes">Notes</h2>
+<h2 class="icon-h brush">Brush</h2>
+<h2 class="icon-h chat-left">Chat-left</h2>
+```
+## Full Bleed Video
 
 1. Make sure you're in HTML mode, and the set up above has been established.
 2. Add a  div element to be wrapped around the video embed with the class, **video**.
@@ -49,7 +63,7 @@ Heading 2 tags can be converted to banners with icons by adding the following cl
 </div>
 ```
 
-### Tip Good Bad Table
+## Tip Good Bad Table
 ```html
 <table class="tbg">
   <tr>
