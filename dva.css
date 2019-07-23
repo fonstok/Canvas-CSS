@@ -24,7 +24,9 @@
   border-radius: 5px; }
 
 .dva .icon-h:before {
-  content: "x";
+  font-family: FontAwesome;
+  content: "\f111";
+  color: #ffffff;
   float: left;
   background-color: #830a0a;
   padding: 5px;
@@ -41,7 +43,8 @@
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  line-height: 10%; }
 
 .dva .charcoal:before {
   background-color: #333; }
@@ -53,43 +56,43 @@
   background-color: #7590a2; }
 
 .dva .reading:before, .dva .book:before {
-  content: url(http://dva.musites.org/icons/book.svg); }
+  content: "\f02d"; }
 
 .dva .assignment:before, .dva .bookmark:before {
-  content: url(http://dva.musites.org/icons/bookmark.svg); }
+  content: "\f02e"; }
 
 .dva .task:before, .dva .pen-nib:before {
-  content: url(http://dva.musites.org/icons/pen-nib.svg); }
+  content: "\f5ad"; }
 
 .dva .requirement:before, .dva .check:before {
-  content: url(http://dva.musites.org/icons/check.svg); }
+  content: "\f00c"; }
 
 .dva .submit:before, .dva .get:before {
-  content: url(http://dva.musites.org/icons/get-app.svg); }
+  content: "\f33d"; }
 
 .dva .objective:before, .dva .bullseye:before {
-  content: url(http://dva.musites.org/icons/bullseye.svg); }
+  content: "\f140"; }
 
 .dva .respond:before, .dva .chat:before {
-  content: url(http://dva.musites.org/icons/chat.svg);
+  content: "\f27a";
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .dva .post:before, .dva .pencil:before {
-  content: url(http://dva.musites.org/icons/pencil-alt.svg); }
+  content: "\f303"; }
 
 .dva .quiz:before, .dva .rocket:before {
-  content: url(http://dva.musites.org/icons/rocket.svg); }
+  content: "\f135"; }
 
 .dva .lesson:before, .dva .notes:before {
-  content: url(http://dva.musites.org/icons/speaker-notes.svg); }
+  content: "\f4a6"; }
 
 .dva .project:before, .dva .brush:before {
-  content: url(http://dva.musites.org/icons/paint-brush.svg); }
+  content: "\f1fc"; }
 
 .dva .reply:before, .dva .chat-left:before {
-  content: url(http://dva.musites.org/icons/chat.svg); }
+  content: "\f27a"; }
 
 .dva p,
 .dva h1,
@@ -102,7 +105,7 @@
 .dva ul,
 .dva ol,
 .dva table {
-  margin-top: 0px; }
+  margin-top: 10px !important; }
 
 .dva ul, .dva ol {
   color: #495369; }
@@ -163,6 +166,10 @@
   padding: 15px 0px;
   line-height: 100%;
   margin-top: 80px; }
+
+.dva h2 + h2 {
+  border-top: none transparent 0px;
+  margin-top: 24px; }
 
 .dva h3 {
   text-transform: uppercase; }
