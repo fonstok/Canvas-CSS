@@ -1,10 +1,20 @@
 .dva * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin-top: 0px; }
 
 .dva > *:first-child {
+  margin-top: 0px; }
+
+.dva p.callout {
+  font-family: 'Lato','Open-Sans' sans-serif;
   margin-top: 0px;
-  border-top: none; }
+  font-size: 1.25em;
+  color: #666; }
+  .dva p.callout.box {
+    background-color: rgba(245, 245, 245, 0.95);
+    padding: 1em;
+    border-radius: 5px; }
 
 .dva img.border {
   border: 4px solid #afbcbe; }
@@ -62,15 +72,17 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -ms-flex-line-pack: justify;
-  align-content: space-between; }
-  .dva .text-image h2:first-child {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .dva .text-image h2:first-child, .dva .text-image h3:first-child, .dva .text-image h4:first-child, .dva .text-image h5:first-child {
     margin-top: 0px;
     border-top: none; }
-  .dva .text-image .text-zone {
-    width: 65%; }
   .dva .text-image .img-zone {
-    margin-right: 40px; }
+    display: block;
+    width: 28%; }
+  .dva .text-image .text-zone {
+    width: 70%; }
   .dva .text-image.right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -171,14 +183,6 @@
 .dva .reply:before, .dva .chat-left:before {
   content: "\f27a"; }
 
-.dva p,
-.dva h1,
-.dva h3,
-.dva h4,
-.dva h5,
-.dva h6 {
-  margin-top: 0px; }
-
 .dva ul,
 .dva ol,
 .dva table {
@@ -234,22 +238,45 @@
 .dva h4,
 .dva h5,
 .dva h6 {
-  margin-top: 48px;
+  margin-top: 40px;
   font-weight: normal;
   margin-bottom: 20px; }
 
 .dva h2 {
-  border-top: solid #ccc 2px;
+  border-top: solid rgba(245, 245, 245, 0.95) 2px;
+  font-size: 1.8em;
+  color: #000;
+  text-transform: none;
   padding: 15px 0px;
   line-height: 100%;
-  margin-top: 80px; }
+  margin-top: 70px; }
 
 .dva h2 + h2 {
   border-top: none transparent 0px;
   margin-top: 24px; }
 
+.dva h2 + h3, .dva h3 + h4, .dva h4 + h5, .dva h5 + h6 {
+  margin-top: 0; }
+
 .dva h3 {
-  text-transform: uppercase; }
+  color: #333;
+  font-size: 1.25em; }
+
+.dva h4 {
+  font-size: 1.15em;
+  color: #7590a2; }
+
+.dva h5 {
+  font-size: 1.10em;
+  font-weight: 400;
+  font-style: italic;
+  color: #7590a2; }
+
+.dva h6 {
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  color: #7590a2; }
 
 .dva ul,
 .dva ol,
@@ -325,7 +352,9 @@
         width: 100%;
         height: auto; }
     .dva .text-image .text-zone {
-      width: 100%; }
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px; }
     .dva .text-image.right .img-zone {
       float: none;
       margin-right: 0px;

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+	font-family: "Open-Sans", "Helvetica Neue";
+}
+
+body {
+	padding:100px;
+}
+
+h2{
+	margin-bottom:40px;
+	margin-top:60px;
+	color: rgba(215, 230, 223, .5);
+	text-transform: uppercase;
+}
