@@ -142,7 +142,7 @@
   background-color: #b49720; }
 
 .dva .silver:before {
-  background-color: #7590a2; }
+  background-color: #55787c; }
 
 .dva .reading:before, .dva .book:before {
   content: "\f02d"; }
@@ -264,19 +264,19 @@
 
 .dva h4 {
   font-size: 1.15em;
-  color: #7590a2; }
+  color: #55787c; }
 
 .dva h5 {
   font-size: 1.10em;
   font-weight: 400;
   font-style: italic;
-  color: #7590a2; }
+  color: #55787c; }
 
 .dva h6 {
   font-size: 1em;
   font-weight: 400;
   font-style: italic;
-  color: #7590a2; }
+  color: #55787c; }
 
 .dva ul,
 .dva ol,
