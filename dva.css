@@ -151,13 +151,13 @@
   content: "\f02e"; }
 
 .dva .task:before, .dva .pen-nib:before {
-  content: "\f5ad"; }
+  content: url(http://dva.musites.org/icons/pen-nib.svg); }
 
 .dva .requirement:before, .dva .check:before {
   content: "\f00c"; }
 
 .dva .submit:before, .dva .get:before {
-  content: "\f33d"; }
+  content: url(http://dva.musites.org/icons/get-app.svg); }
 
 .dva .objective:before, .dva .bullseye:before {
   content: "\f140"; }
@@ -169,13 +169,13 @@
   transform: scale(-1, 1); }
 
 .dva .post:before, .dva .pencil:before {
-  content: "\f303"; }
+  content: url(http://dva.musites.org/icons/pencil-alt.svg); }
 
 .dva .quiz:before, .dva .rocket:before {
   content: "\f135"; }
 
 .dva .lesson:before, .dva .notes:before {
-  content: "\f4a6"; }
+  content: url(http://dva.musites.org/icons/speaker-notes.svg); }
 
 .dva .project:before, .dva .brush:before {
   content: "\f1fc"; }
