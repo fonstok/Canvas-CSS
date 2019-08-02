@@ -5,7 +5,10 @@ http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascr
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
+pre {
 
+	border-radius:10px;
+}
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #000;
@@ -51,7 +54,8 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
+	margin: 3em 3em;
+	margin-bottom:5em;
 	overflow: auto;
 }
 
