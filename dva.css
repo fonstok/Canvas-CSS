@@ -6,18 +6,15 @@
 .dva > *:first-child {
   margin-top: 0px; }
 
-.dva p.callout {
+.dva p.call-out {
   font-family: 'Lato','Open-Sans' sans-serif;
   margin-top: 0px;
   font-size: 1.25em;
   color: #666; }
-  .dva p.callout.box {
+  .dva p.call-out.box {
     background-color: rgba(245, 245, 245, 0.95);
     padding: 1em;
     border-radius: 5px; }
-
-.dva img.border {
-  border: 4px solid #afbcbe; }
 
 .dva .float-fix:after {
   content: ".";
@@ -25,6 +22,9 @@
   display: block;
   height: 0;
   clear: both; }
+
+.dva img.border {
+  border: 4px solid #afbcbe; }
 
 .dva img.left {
   margin-right: 30px;
@@ -58,7 +58,7 @@
     display: block;
     margin-top: 10px;
     font-size: 80%;
-    opacity: .8;
+    opacity: 0.8;
     line-height: 130%;
     width: 100%;
     padding: 8px;
@@ -75,7 +75,10 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .dva .text-image h2:first-child, .dva .text-image h3:first-child, .dva .text-image h4:first-child, .dva .text-image h5:first-child {
+  .dva .text-image h2:first-child,
+  .dva .text-image h3:first-child,
+  .dva .text-image h4:first-child,
+  .dva .text-image h5:first-child {
     margin-top: 0px;
     border-top: none; }
   .dva .text-image .img-zone {
