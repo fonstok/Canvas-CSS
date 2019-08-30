@@ -7,7 +7,8 @@
   margin-top: 40px; }
 
 .dva a.btn {
-  background-color: #1b6ce6;
+  background-color: #55787c;
+  display: inline-block;
   color: #fff;
   border-radius: 8px;
   padding: 8px 10px;
@@ -16,6 +17,14 @@
   text-decoration: none; }
   .dva a.btn.upper {
     text-transform: uppercase; }
+  .dva a.btn:hover {
+    -webkit-transition: all .15s ease-in;
+    -o-transition: all .15s ease-in;
+    transition: all .15s ease-in;
+    background-color: #333;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02); }
 
 .dva .float-fix:after {
   content: ".";
@@ -192,11 +201,11 @@
   margin-top: 0px !important;
   font-size: 1.25em !important;
   line-height: 200%;
-  color: #666; }
+  color: #555; }
   .dva p.call-out.box, .dva p.intro.box, .dva .call-out.box {
     background-color: rgba(245, 245, 245, 0.95);
-    padding: 40px;
-    margin: 40px -20px 20px -20px;
+    padding: 20px;
+    margin: 40px 0px 20px 0px;
     border-radius: 8px; }
   .dva p.call-out p:last-child, .dva p.intro p:last-child, .dva .call-out p:last-child {
     margin-bottom: 0 !important; }
@@ -369,7 +378,7 @@
       color: #fff;
       padding: 0 10px; }
     .dva ul.qa li:nth-child(odd)::before, .dva ul.ps li:nth-child(odd)::before {
-      background-color: #2449c0; }
+      background-color: #37436b; }
     .dva ul.qa li:nth-child(even), .dva ul.ps li:nth-child(even) {
       margin-bottom: 3em; }
     .dva ul.qa li:nth-child(even)::before, .dva ul.ps li:nth-child(even)::before {
@@ -382,34 +391,34 @@
     content: "Problem"; }
   .dva ul.ps li:nth-child(even)::before {
     content: "Solution"; }
-  .dva ul.pill {
+  .dva ul.pills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     font-size: 99%; }
-    .dva ul.pill li {
+    .dva ul.pills li {
       background-color: #ddd;
       border-radius: 8px;
       margin: 5px;
       padding: 8px;
       color: #000;
       line-height: 102%; }
-      .dva ul.pill li::before {
+      .dva ul.pills li::before {
         content: none; }
-    .dva ul.pill.upper li {
+    .dva ul.pills.upper li {
       text-transform: uppercase; }
-    .dva ul.pill.red li {
+    .dva ul.pills.red li {
       background-color: #830a0a;
       color: #fff; }
-    .dva ul.pill.gold li {
+    .dva ul.pills.gold li {
       background-color: #b49720;
       color: #fff; }
-    .dva ul.pill.silver li {
+    .dva ul.pills.silver li {
       background-color: #55787c;
       color: #fff; }
-    .dva ul.pill.charcoal li {
+    .dva ul.pills.charcoal li {
       background-color: #333;
       color: #fff; }
 
