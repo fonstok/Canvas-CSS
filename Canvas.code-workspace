@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.fontSize": 14,
+		"editor.tabSize": 2,
+		"editor.formatOnSave": true,
+		"editor.wordWrap": "on",
+		"cSpell.ignoreWords": ["boyehsg"],
+		"liveSassCompile.settings.generateMap": true,
+		"liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+		"liveServer.settings.multiRootWorkspaceName": "Canvas-CSS",
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "expanded",
+				"extensionName": ".css",
+				"savePath": "/css"
+			}
+		]
+	}
+}

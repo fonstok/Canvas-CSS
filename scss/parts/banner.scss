@@ -1,0 +1,90 @@
+.icon-h {
+    background-color: #eeeeee;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    border-top: none;
+    font-weight: normal;
+    line-height: 90%;
+    border-radius: 5px;
+}
+.icon-h:before {
+    font-family: FontAwesome;
+    content: "\f111";
+    color:#ffffff;
+    float: left;
+    background-color:$red;
+    padding: 5px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border:2px solid #fff;
+    line-height:10%;
+}
+.charcoal:before {
+    background-color:$charcoal;
+}
+.gold:before {
+    background-color:$gold;
+}
+.silver:before {
+    background-color:$silver;
+}
+.reading:before, .book:before {
+    //content: url(http://dva.musites.org/icons/book.svg);
+    content: "\f02d";
+}
+.assignment:before, .bookmark:before {
+    //content: url(http://dva.musites.org/icons/bookmark.svg);
+    content: "\f02e";
+    
+}
+.task:before, .pen-nib:before {
+    content: url(http://dva.musites.org/icons/pen-nib.svg);
+    //content: "\f5ad";
+}
+.requirement:before, .check:before {
+    //content: url(http://dva.musites.org/icons/check.svg);
+    content: "\f00c";
+}
+.submit:before, .get:before {
+    content: url(http://dva.musites.org/icons/get-app.svg);
+    //content: "\f33d";
+}
+.objective:before, .bullseye:before {
+    //content: url(http://dva.musites.org/icons/bullseye.svg);
+    content: "\f140";
+}
+.respond:before, .chat:before {
+    //content: url(http://dva.musites.org/icons/chat.svg);
+    content: "\f27a";
+    transform: scale(-1, 1);
+}
+.post:before, .pencil:before {
+    content: url(http://dva.musites.org/icons/pencil-alt.svg);
+    //content:"\f303"
+}
+.quiz:before, .rocket:before {
+    //content: url(http://dva.musites.org/icons/rocket.svg);
+    content: "\f135";
+}
+.lesson:before, .notes:before {
+    //content: "\f4a6";
+    content: url(http://dva.musites.org/icons/speaker-notes.svg);
+}
+.project:before, .brush:before {
+    //content: url(http://dva.musites.org/icons/paint-brush.svg);
+    content: "\f1fc";
+}
+.reply:before, .chat-left:before  {
+    //content: url(http://dva.musites.org/icons/chat.svg);
+    content: "\f27a";		
+}

@@ -1,0 +1,7 @@
+.assignments .dva {
+	padding:10px;
+    & > *:first-child {
+		margin-top: 0px!important;
+		border-top: none !important;
+	}
+}

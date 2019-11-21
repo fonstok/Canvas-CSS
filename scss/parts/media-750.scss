@@ -1,0 +1,47 @@
+@media only screen and (max-width: 750px) {
+
+    .left {
+		margin-right:$img-margin;
+		margin-bottom:$img-margin;
+		float:none;
+	}
+	.right {
+		float:none;
+		margin-left:$img-margin;
+	}
+    
+    img {
+        width:100%;
+        height:auto;
+        float: none!important;
+	}
+	.text-image {
+		margin-top: 48px;
+		display:block;
+		align-items: flex-start;
+		
+		.img-zone {
+			margin-right:0px;
+			width:100%;
+			display:block;
+			max-width:auto;
+			min-width:auto;
+			img {
+				width:100%;
+				height:auto;
+			}
+		}
+		.text-zone {
+			width:100%;
+			margin-right:0px;
+			margin-left:0px;
+		}
+		&.right {
+			.img-zone {
+				float:none;
+				margin-right:0px;
+				margin-left:0px;
+			}
+		}
+	}	
+	}

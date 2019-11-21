@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+	font-family: "Lato", "Helvetica Neue";
+}
+
+body {
+	padding: 100px;
+}
+$colorMain: rgb(98, 178, 184);
+#load-zone > h2 {
+	// background-color:#eee;
+	font-weight: 700;
+	margin-bottom: 80px;
+	font-size: 50px;
+	margin-left: -40px;
+	margin-right: -40px;
+	margin-top: 200px;
+	padding: 10px;
+	padding-right: 40px;
+	text-align: right;
+	border-radius: 5px;
+	color: #999;
+	text-transform: uppercase;
+}
+
+#load-zone > *:first-child {
+	margin-top: 0px;
+}
+nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: $colorMain;
+	color: #fff;
+	padding: 20px;
+	h1 {
+		font-weight: normal;
+		position: absolute;
+		// left:0;
+		margin: 0px;
+		line-height: 90%;
+	}
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		margin: 0;
+		padding: 0;
+		li {
+			a {
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #fff;
+				margin-right: 1em;
+			}
+		}
+	}
+}

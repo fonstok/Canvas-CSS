@@ -1,0 +1,61 @@
+@import "parts/vars";
+// test
+.dva {
+	& * {
+		box-sizing: border-box;
+		margin-top: 0px;
+	}
+	& > *:first-child {
+		margin-top: 40px;
+		// border-top: none;
+	}
+	a.btn {
+		background-color: rgb(43, 143, 201);
+		display: inline-block;
+		color: #fff;
+		border-radius: 8px;
+		padding: 8px 10px;
+		margin: 0 5px;
+		line-height: 99%;
+		text-decoration: none;
+		&.upper {
+			text-transform: uppercase;
+		}
+
+		&:hover {
+			transition: all 0.15s ease-in;
+			background-color: $charcoal;
+			transform: scale(1.02);
+		}
+	}
+
+	.float-fix:after {
+		content: ".";
+		visibility: hidden;
+		display: block;
+		height: 0;
+		clear: both;
+	}
+
+	@import "parts/images";
+	@import "parts/banner";
+	@import "parts/text";
+	@import "parts/special";
+
+	ul,
+	ol,
+	p {
+		margin-bottom: 26px;
+	}
+
+	.line-top {
+		border-top: dotted 1px #000;
+	}
+
+	// & > p:first-child,
+
+	@import "parts/tables";
+	@import "parts/lists";
+	@import "parts/media-750";
+}
+@import "parts/assignments";
