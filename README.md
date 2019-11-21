@@ -1,5 +1,5 @@
 # Canvas-CSS
-Maryvilles Design & Visual Art Program's CSS files for Canvas CMS  
+Maryville Design & Visual Art Program's CSS files for Canvas CMS  
 
 ## Set Up
 Just follow these steps to enable:
