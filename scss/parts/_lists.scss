@@ -10,20 +10,20 @@ table {
 ol.round {
 	counter-reset: my-counter;
 	list-style-type: none;
-	padding-left:1em;
-	
+	padding-left: 1em;
+
 	li {
-			padding-left:1.75em;
-			counter-increment: my-counter;
-		  position:relative;
-		  line-height: 185%;
-	&:before {    
-		font-weight: bold;
-		border:2px solid #ccc;
+		padding-left: 1.75em;
+		counter-increment: my-counter;
+		position: relative;
+		line-height: 185%;
+		&:before {
+			font-weight: bold;
+			border: 2px solid #ccc;
 			content: counter(my-counter);
-			background-color:#eee;
+			background-color: #eee;
 			border-radius: 50%;
-			padding:4px 5px 5px 4px;
+			padding: 4px 5px 5px 4px;
 			color: #333;
 			width: 1.25em;
 			height: 1.25em;
@@ -31,35 +31,31 @@ ol.round {
 			position: absolute;
 			justify-content: center;
 			align-items: center;
-			font-size:.8em;
-			left:-.75em;
-			top:.125em;
+			font-size: 0.8em;
+			left: -0.75em;
+			top: 0.125em;
 			line-height: 99%;
 			// float: left;
-			
+
 			// margin-right: 1em;
 			// margin-left:-3em;
-			
-			
-			
-			
-			// 
-		  }
+
+			//
+		}
 	}
 }
 
-// 
+//
 // ol {
-	
+
 //   }
-  
+
 //   li {
-	
-	
-// 	&:before { 
-// 	  content: "{ Part " counters(my-counter,  ".") " } "; 
+
+// 	&:before {
+// 	  content: "{ Part " counters(my-counter,  ".") " } ";
 // 	}
-	
+
 //   }
 // ul,
 // ol {
@@ -76,22 +72,20 @@ ul li::before {
 	width: 1em; // Also needed for space (tweak if needed)
 	margin-left: -1em; // Also needed for space (tweak if needed)
 	transform: translateY(-2px); // Shift the bullet up a bit
-
 }
 ul {
 	list-style-type: none;
 	font-size: 105%;
 
-
-	&.qa, &.ps {
-		margin-left:100px;
+	&.qa,
+	&.ps {
+		margin-left: 100px;
 		li {
-
-			&::before{	
+			&::before {
 				position: absolute;
-				
-				width: auto; 
-		
+
+				width: auto;
+
 				transform: none;
 				transform: translateX(-95%);
 				border-radius: 5px;
@@ -99,80 +93,78 @@ ul {
 				justify-content: center;
 				align-content: center;
 				float: left;
-				color:#fff;
-				padding:0 10px;
+				color: #fff;
+				padding: 0 10px;
 			}
-			&:nth-child(odd)::before  {
-			
-				background-color:rgb(55, 67, 107);
+			&:nth-child(odd)::before {
+				background-color: rgb(55, 67, 107);
 			}
-			&:nth-child(even){
-				margin-bottom:3em;
+			&:nth-child(even) {
+				margin-bottom: 3em;
 			}
-			&:nth-child(even)::before  {
-				background-color:rgb(235, 166, 63);
+			&:nth-child(even)::before {
+				background-color: rgb(235, 166, 63);
 			}
 		}
 	}
 	&.qa {
 		li {
-			&:nth-child(odd)::before  {
-				content:"Question";
+			&:nth-child(odd)::before {
+				content: "Question";
 			}
-		
-			&:nth-child(even)::before  {
-				content:"Answer";
+
+			&:nth-child(even)::before {
+				content: "Answer";
 			}
 		}
 	}
 
 	&.ps {
 		li {
-			&:nth-child(odd)::before  {
-				content:"Problem";
+			&:nth-child(odd)::before {
+				content: "Problem";
 			}
-		
-			&:nth-child(even)::before  {
-				content:"Solution";
+
+			&:nth-child(even)::before {
+				content: "Solution";
 			}
 		}
 	}
 
 	&.pills {
-		display:flex;
+		display: flex;
 		flex-wrap: wrap;
 		font-size: 99%;
-		
+
 		li {
 			background-color: #ddd;
 			border-radius: 8px;
-			margin:5px;
-			padding:8px;
-			color:#000;
-			line-height:102%;
+			margin: 5px;
+			padding: 8px;
+			color: #000;
+			line-height: 102%;
 			&::before {
-				content:none;
+				content: none;
 			}
 		}
 		&.upper li {
 			text-transform: uppercase;
 		}
 		&.red li {
-			background-color:$red;
-			color:#fff;
+			background-color: $red;
+			color: #fff;
 		}
 		&.gold li {
-			background-color:$gold;
-			color:#fff;
+			background-color: $gold;
+			color: #fff;
 		}
 		&.silver li {
-			background-color:$silver;
-			color:#fff;
+			background-color: $silver;
+			color: #fff;
 		}
 		&.charcoal li {
-			background-color:$charcoal;
-			color:#fff;
+			background-color: $charcoal;
+			color: #fff;
 		}
 	}
 }
-

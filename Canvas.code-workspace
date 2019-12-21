@@ -5,12 +5,14 @@
 		}
 	],
 	"settings": {
-		"editor.fontSize": 14,
+		"editor.fontSize": 18,
 		"editor.tabSize": 2,
+		"editor.useTabStops": true,
 		"editor.formatOnSave": true,
 		"editor.wordWrap": "on",
-		"cSpell.ignoreWords": ["boyehsg"],
+		"cSpell.ignoreWords": ["Fahnestock"],
 		"liveSassCompile.settings.generateMap": true,
+
 		"liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
 		"liveServer.settings.multiRootWorkspaceName": "Canvas-CSS",
 		"liveSassCompile.settings.formats": [
@@ -19,6 +21,12 @@
 				"extensionName": ".css",
 				"savePath": "/css"
 			}
+		],
+
+		"liveSassCompile.settings.excludeList": [
+			"**/scss/parts/**",
+			"**/node_modules/**",
+			".vscode/**"
 		]
 	}
 }
