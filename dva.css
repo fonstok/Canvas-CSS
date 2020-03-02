@@ -256,31 +256,36 @@
   content: "\f27a";
 }
 
-.dva p.call-out, .dva .call-out {
+.dva p.call-out,
+.dva .call-out {
   border-left: 10px solid #333;
   padding-left: 40px;
-  font-family: 'Lato','Open-Sans' sans-serif;
+  font-family: "Lato", "Open-Sans" sans-serif;
   margin-top: 0px !important;
   font-size: 1.25em !important;
   line-height: 200%;
   color: #333;
 }
 
-.dva p.call-out.box, .dva .call-out.box {
-  background-color: rgba(245, 245, 245, 0.95);
+.dva p.call-out.box,
+.dva .call-out.box {
+  background-color: rgba(230, 228, 228, 0.95);
   padding: 40px;
   margin: 0px 0px 20px 0px;
 }
 
-.dva p.call-out.no-line, .dva .call-out.no-line {
+.dva p.call-out.no-line,
+.dva .call-out.no-line {
   border-left: none;
 }
 
-.dva p.call-out p:last-child, .dva .call-out p:last-child {
+.dva p.call-out p:last-child,
+.dva .call-out p:last-child {
   margin-bottom: 0 !important;
 }
 
-.dva p.intro, .dva .intro {
+.dva p.intro,
+.dva .intro {
   font-size: 145%;
   margin-top: 20px;
   padding-bottom: 20px;
@@ -308,9 +313,9 @@
 }
 
 .dva h2 {
-  border-top: solid rgba(245, 245, 245, 0.95) 2px;
+  border-top: solid rgba(230, 228, 228, 0.95) 2px;
   font-size: 1.8em;
-  color: #000;
+  color: #2d3b45;
   text-transform: none;
   padding: 15px 0px;
   line-height: 100%;
@@ -320,7 +325,7 @@
 .dva h3 {
   position: relative;
   color: #333;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .dva h4 {
@@ -348,11 +353,15 @@
   margin-top: 24px;
 }
 
-.dva h2 + h3, .dva h3 + h4, .dva h4 + h5, .dva h5 + h6 {
+.dva h2 + h3,
+.dva h3 + h4,
+.dva h4 + h5,
+.dva h5 + h6 {
   margin-top: 0 !important;
 }
 
-.dva .columns, .dva .c-count-3 {
+.dva .columns,
+.dva .c-count-3 {
   -webkit-columns: 3;
           columns: 3;
 }
@@ -367,7 +376,84 @@
           columns: 4;
 }
 
-.dva .hl {
+.dva sup {
+  margin: 0px;
+  position: relative;
+  font-size: 10px;
+  left: 2px;
+}
+
+.dva .t-syllabus {
+  width: 100%;
+  border: 1px solid #666;
+}
+
+.dva .t-syllabus thead {
+  background-color: #eee;
+  color: #555;
+}
+
+.dva .t-syllabus td,
+.dva .t-syllabus th {
+  padding: 8px;
+  border: 0.5px solid #555;
+}
+
+.dva .t-syllabus th {
+  font-weight: bold;
+  text-align: left;
+}
+
+.dva .t-syllabus .total {
+  font-weight: bold;
+  text-align: right;
+}
+
+.dva .t-syllabus.weight td:nth-child(1),
+.dva .t-syllabus.weight th:nth-child(1) {
+  width: 10%;
+}
+
+.dva .t-syllabus.weight td:nth-child(3),
+.dva .t-syllabus.weight th:nth-child(3) {
+  width: 20%;
+}
+
+.dva .t-syllabus.scale td:nth-child(1),
+.dva .t-syllabus.scale th:nth-child(1) {
+  width: 7%;
+}
+
+.dva .t-syllabus.scale td:nth-child(2),
+.dva .t-syllabus.scale th:nth-child(2) {
+  width: 18%;
+}
+
+.dva .t-syllabus.scale td:nth-child(3),
+.dva .t-syllabus.scale th:nth-child(3) {
+  width: 74%;
+}
+
+.dva .fine-print {
+  padding: 10px;
+}
+
+.dva .fine-print p {
+  font-size: 0.7em;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  margin-left: 8px;
+  text-indent: 0;
+}
+
+.dva .fine-print p sup {
+  margin: 0px;
+  position: relative;
+  left: -8px;
+}
+
+.dva .hl,
+.dva mark {
   border-bottom: 2px #e2d301 solid;
   background-color: rgba(251, 255, 0, 0.8);
   padding: 2px 6px;
@@ -375,17 +461,20 @@
   color: rgba(0, 0, 0, 0.85);
 }
 
-.dva .hl.blue {
+.dva .hl.blue,
+.dva mark.blue {
   border-color: #0eb9b9;
   background-color: rgba(0, 255, 255, 0.4);
 }
 
-.dva .hl.purple {
+.dva .hl.purple,
+.dva mark.purple {
   border-color: #cf25f1;
   background-color: rgba(207, 37, 241, 0.4);
 }
 
-.dva .hl.orange {
+.dva .hl.orange,
+.dva mark.orange {
   border-color: #d89400;
   background-color: rgba(255, 174, 0, 0.85);
 }
