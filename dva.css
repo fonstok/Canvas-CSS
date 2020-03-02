@@ -384,7 +384,8 @@
 }
 
 .dva .t-syllabus {
-  width: 100%;
+  width: 90%;
+  max-width: 1000px;
   border: 1px solid #666;
 }
 
@@ -833,4 +834,3 @@
   margin-top: 0px !important;
   border-top: none !important;
 }
-/*# sourceMappingURL=dva.css.map */
