@@ -4,7 +4,7 @@
   margin-top: 0px;
 }
 
-.dva > *:first-child {
+.dva > *:first-child:not(.top-banner) {
   margin-top: 40px;
 }
 
@@ -37,6 +37,26 @@
   display: block;
   height: 0;
   clear: both;
+}
+
+.dva .top-image {
+  position: relative;
+  min-height: 30%;
+  background-color: #ab2929;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dva .top-image img {
+  display: block;
 }
 
 .dva img.border {
@@ -141,10 +161,8 @@
 }
 
 .dva .icon-h {
-  background-color: #eeeeee;
   position: relative;
-  padding: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
   font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,20 +170,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: none;
   font-weight: normal;
   line-height: 90%;
-  border-radius: 5px;
 }
 
 .dva .icon-h:before {
   font-family: FontAwesome;
   content: "\f111";
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   color: #ffffff;
-  float: left;
   background-color: #830a0a;
   padding: 5px;
-  margin-right: 10px;
+  position: relative;
+  left: -10px;
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -178,7 +196,6 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  border: 2px solid #fff;
   line-height: 10%;
 }
 
@@ -191,7 +208,7 @@
 }
 
 .dva .silver:before {
-  background-color: #55787c;
+  background-color: #596566;
 }
 
 .dva .reading:before,
@@ -227,8 +244,8 @@
 .dva .respond:before,
 .dva .chat:before {
   content: "\f27a";
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
+  -webkit-transform: scale(-0.8, 0.8);
+          transform: scale(-0.8, 0.8);
 }
 
 .dva .post:before,
@@ -258,8 +275,6 @@
 
 .dva p.call-out,
 .dva .call-out {
-  border-left: 10px solid #333;
-  padding-left: 40px;
   font-family: "Lato", "Open-Sans" sans-serif;
   margin-top: 0px !important;
   font-size: 1.25em !important;
@@ -269,14 +284,34 @@
 
 .dva p.call-out.box,
 .dva .call-out.box {
-  background-color: rgba(230, 228, 228, 0.95);
+  background-color: #f5f2f0;
   padding: 40px;
   margin: 0px 0px 20px 0px;
+  border-radius: 5px;
+  color: black;
+  text-shadow: 2px 2px 1px #ffffff;
+}
+
+.dva p.call-out.drop-cap:first-child:first-letter,
+.dva .call-out.drop-cap:first-child:first-letter {
+  float: left;
+  font-size: 5em;
+  line-height: 5em;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 
 .dva p.call-out.no-line,
 .dva .call-out.no-line {
   border-left: none;
+}
+
+.dva p.call-out.line,
+.dva .call-out.line {
+  border-left: none;
+  border-left: 4px solid #596566;
+  padding-left: 20px;
 }
 
 .dva p.call-out p:last-child,
@@ -298,7 +333,7 @@
 
 .dva p,
 .dva li {
-  line-height: 200%;
+  line-height: 180%;
 }
 
 .dva h1,
@@ -313,7 +348,9 @@
 }
 
 .dva h2 {
-  border-top: solid rgba(230, 228, 228, 0.95) 2px;
+  font-family: "Oswald", "Lato", sans-serif;
+  font-weight: 400;
+  border-top: solid rgba(238, 238, 238, 0.95) 2px;
   font-size: 1.8em;
   color: #2d3b45;
   text-transform: none;
@@ -323,6 +360,7 @@
 }
 
 .dva h3 {
+  font-family: "Oswald", "Lato", sans-serif;
   position: relative;
   color: #333;
   font-size: 1.4em;
@@ -330,7 +368,7 @@
 
 .dva h4 {
   font-size: 1em !important;
-  color: #55787c;
+  color: #596566;
   margin-bottom: 20px !important;
 }
 
@@ -338,14 +376,14 @@
   font-size: 1em;
   font-weight: 400;
   font-style: italic;
-  color: #55787c;
+  color: #596566;
 }
 
 .dva h6 {
   font-size: 1em;
   font-weight: 400;
   font-style: italic;
-  color: #55787c;
+  color: #596566;
 }
 
 .dva h2 + h2 {
@@ -451,6 +489,26 @@
   margin: 0px;
   position: relative;
   left: -8px;
+}
+
+.dva .top-image {
+  position: relative;
+  min-height: 30%;
+  background-color: #ab2929;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dva .top-image img {
+  display: block;
 }
 
 .dva .hl,
@@ -602,6 +660,7 @@
 }
 
 .dva ol.round li {
+  white-space: normal;
   padding-left: 1.75em;
   counter-increment: my-counter;
   position: relative;
@@ -646,6 +705,20 @@
   margin-left: -1em;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+}
+
+.dva ul.check-list li::before {
+  font-family: FontAwesome;
+  content: "\f00c";
+  color: #0fb8cb;
+  display: inline-block;
+  width: 1em;
+  -webkit-transform: translate(-0.5em, -0.25em) scale(1.4);
+          transform: translate(-0.5em, -0.25em) scale(1.4);
+}
+
+.dva ul.check-list li {
+  margin-bottom: 1em;
 }
 
 .dva ul {
@@ -743,7 +816,7 @@
 }
 
 .dva ul.pills.silver li {
-  background-color: #55787c;
+  background-color: #596566;
   color: #fff;
 }
 
