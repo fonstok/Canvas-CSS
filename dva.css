@@ -275,7 +275,6 @@
 
 .dva p.call-out,
 .dva .call-out {
-  font-family: "Lato", "Open-Sans" sans-serif;
   margin-top: 0px !important;
   font-size: 1.25em !important;
   line-height: 200%;
@@ -348,8 +347,7 @@
 }
 
 .dva h2 {
-  font-family: "Oswald", "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   border-top: solid rgba(238, 238, 238, 0.95) 2px;
   font-size: 1.8em;
   color: #2d3b45;
@@ -360,7 +358,7 @@
 }
 
 .dva h3 {
-  font-family: "Oswald", "Lato", sans-serif;
+  font-weight: 700;
   position: relative;
   color: #333;
   font-size: 1.4em;
