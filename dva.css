@@ -283,12 +283,7 @@
 
 .dva p.call-out.box,
 .dva .call-out.box {
-  background-color: #f5f2f0;
-  padding: 40px;
   margin: 0px 0px 20px 0px;
-  border-radius: 5px;
-  color: black;
-  text-shadow: 2px 2px 1px #ffffff;
 }
 
 .dva p.call-out.drop-cap:first-child:first-letter,
@@ -507,6 +502,15 @@
 
 .dva .top-image img {
   display: block;
+}
+
+.dva .box {
+  background-color: #f5f2f0;
+  padding: 40px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 5px;
+  color: black;
+  text-shadow: 2px 2px 1px #ffffff;
 }
 
 .dva .hl,
