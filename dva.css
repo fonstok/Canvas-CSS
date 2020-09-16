@@ -899,6 +899,15 @@
     margin-right: 0px;
     margin-left: 0px;
   }
+  .dva p.call-out,
+  .dva .call-out {
+    margin-top: 0px !important;
+    line-height: 180%;
+  }
+  .dva .box {
+    padding: 10px;
+    margin: 4px 3px 4px 3px;
+  }
 }
 
 .assignments .dva {
