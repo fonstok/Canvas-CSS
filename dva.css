@@ -1,3 +1,7 @@
+.dva:last-of-type {
+  padding-bottom: 150px;
+}
+
 .dva * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -212,7 +216,7 @@
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   color: #ffffff;
-  background-color: #830a0a;
+  background-color: #a31616;
   padding: 5px;
   position: relative;
   left: -10px;
@@ -318,16 +322,6 @@
   margin: 0px 0px 20px 0px;
 }
 
-.dva p.call-out.drop-cap:first-child:first-letter,
-.dva .call-out.drop-cap:first-child:first-letter {
-  float: left;
-  font-size: 5em;
-  line-height: 5em;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-}
-
 .dva p.call-out.no-line,
 .dva .call-out.no-line {
   border-left: none;
@@ -377,7 +371,6 @@
   font-weight: 700;
   border-top: solid rgba(238, 238, 238, 0.95) 2px;
   font-size: 1.8em;
-  color: #2d3b45;
   text-transform: none;
   padding: 15px 0px;
   line-height: 100%;
@@ -387,28 +380,24 @@
 .dva h3 {
   font-weight: 700;
   position: relative;
-  color: #333;
   font-size: 1.4em;
 }
 
 .dva h4 {
-  font-size: 1em !important;
-  color: #596566;
+  font-size: 1.25em !important;
   margin-bottom: 20px !important;
 }
 
 .dva h5 {
   font-size: 1em;
   font-weight: 400;
-  font-style: italic;
-  color: #596566;
+  text-transform: uppercase;
 }
 
 .dva h6 {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 400;
   font-style: italic;
-  color: #596566;
 }
 
 .dva h2 + h2 {
@@ -534,6 +523,11 @@
 
 .dva .top-image img {
   display: block;
+}
+
+.dva .note {
+  font-style: italic;
+  font-size: 0.9em;
 }
 
 .dva .box {
@@ -699,25 +693,28 @@
   margin-top: 10px !important;
 }
 
+.dva li {
+  margin-bottom: 8px;
+}
+
 .dva ol.round {
   counter-reset: my-counter;
   list-style-type: none;
   padding-left: 1em;
 }
 
-.dva ol.round li {
+.dva ol.round > li {
   white-space: normal;
   padding-left: 1.75em;
   counter-increment: my-counter;
   position: relative;
-  line-height: 185%;
+  line-height: 150%;
 }
 
-.dva ol.round li:before {
+.dva ol.round > li:before {
   font-weight: bold;
   border: 2px solid #ccc;
   content: counter(my-counter);
-  background-color: #eee;
   border-radius: 50%;
   padding: 4px 5px 5px 4px;
   color: #333;
@@ -739,28 +736,38 @@
   line-height: 99%;
 }
 
-.dva li {
-  margin-bottom: 12px;
-}
-
 .dva ul li::before {
   content: "\2B1D";
   color: #bbb;
+  font-size: 1.5em;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  width: 0.5em;
+  margin-left: -0.5em;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.dva ul ul,
+.dva ol ul {
+  margin-bottom: 26px;
+  padding-left: 1em;
+  padding-right: 5%;
+}
+
+.dva ul ul li::before,
+.dva ol ul li::before {
+  content: "\2043";
 }
 
 .dva ul.check-list li::before {
+  margin-left: -1em;
   font-family: FontAwesome;
   content: "\f00c";
   color: #0fb8cb;
   display: inline-block;
   width: 1em;
-  -webkit-transform: translate(-0.5em, -0.25em) scale(1.4);
-          transform: translate(-0.5em, -0.25em) scale(1.4);
+  -webkit-transform: translate(0em, 0em) scale(0.75);
+          transform: translate(0em, 0em) scale(0.75);
 }
 
 .dva ul.check-list li {
@@ -769,7 +776,6 @@
 
 .dva ul {
   list-style-type: none;
-  font-size: 105%;
 }
 
 .dva ul.qa, .dva ul.ps {
@@ -787,6 +793,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 0.8em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -835,11 +842,13 @@
 }
 
 .dva ul.pills li {
-  background-color: #ddd;
+  border-color: #333;
+  border-style: solid;
+  border-width: 1px;
   border-radius: 8px;
   margin: 5px;
   padding: 8px;
-  color: #000;
+  color: #333;
   line-height: 102%;
 }
 
@@ -852,23 +861,19 @@
 }
 
 .dva ul.pills.red li {
-  background-color: #830a0a;
-  color: #fff;
+  border-color: #a31616;
 }
 
 .dva ul.pills.gold li {
-  background-color: #b49720;
-  color: #fff;
+  border-color: #b49720;
 }
 
 .dva ul.pills.silver li {
-  background-color: #596566;
-  color: #fff;
+  border-color: #596566;
 }
 
 .dva ul.pills.charcoal li {
-  background-color: #333;
-  color: #fff;
+  border-color: #333;
 }
 
 @media only screen and (max-width: 950px) {
