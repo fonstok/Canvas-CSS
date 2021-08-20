@@ -46,7 +46,7 @@
 
 .dva .imgHold {
   display: block;
-  width: 100%;
+  width: 60%;
   height: auto;
   margin: 0 auto;
   -webkit-box-shadow: 5px 5px 5px rgba(187, 187, 187, 0.712);
@@ -66,8 +66,27 @@
           box-shadow: none !important;
 }
 
+.dva .imgHold.left {
+  margin: 0 0;
+}
+
+.dva .imgHold.medium {
+  width: 60%;
+  height: auto;
+}
+
 .dva .imgHold.small {
-  width: 50%;
+  width: 30%;
+  height: auto;
+}
+
+.dva .imgHold.large {
+  width: 100%;
+  height: auto;
+}
+
+.dva .imgHold img {
+  width: 102%;
   height: auto;
 }
 
@@ -97,17 +116,6 @@
 
 .dva img.border {
   border: 4px solid #afbcbe;
-}
-
-.dva img.left {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  float: left;
-}
-
-.dva img.right {
-  float: right;
-  margin-left: 30px;
 }
 
 .dva .img-zone {
@@ -194,6 +202,22 @@
 
 .dva h2 + .text-image {
   margin-top: 0px;
+}
+
+@media only screen and (max-width: 950px) {
+  .dva .imgHold.small {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .dva .imgHold.medium {
+    width: 100%;
+  }
+  .dva .imgHold.small {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .dva .icon-h {
@@ -571,6 +595,8 @@
   position: relative;
   padding-top: 56.25%;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 20px;
   border: 4px solid #000;
   background-color: #000;
@@ -605,6 +631,39 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.dva .columnBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dva .columnBlock > div {
+  width: 30%;
+}
+
+@media only screen and (max-width: 950px) {
+  .dva .columnBlock > div {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .dva .columnBlock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dva .columnBlock > div {
+    width: 100%;
+  }
 }
 
 .dva ul,
