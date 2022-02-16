@@ -336,8 +336,8 @@
 .dva p.call-out,
 .dva .call-out {
   margin-top: 0px !important;
-  font-size: 1.25em !important;
-  line-height: 200%;
+  font-size: 1.2em !important;
+  line-height: 180%;
   color: #333;
 }
 
@@ -554,9 +554,16 @@
   font-size: 0.9em;
 }
 
+.dva .instructions {
+  background-color: #a5fde0;
+  padding: 10px;
+  font-size: 0.95em;
+  border-radius: 10px;
+}
+
 .dva .box {
   background-color: #f5f2f0;
-  padding: 40px;
+  padding: 30px;
   margin: 20px 10px 20px 10px;
   border-radius: 5px;
   color: black;
@@ -768,6 +775,7 @@
   counter-increment: my-counter;
   position: relative;
   line-height: 150%;
+  font-size: 1em;
 }
 
 .dva ol.round > li:before {
@@ -1025,4 +1033,70 @@
 .assignments .dva > *:first-child {
   margin-top: 0px !important;
   border-top: none !important;
+}
+
+.worksheet h2 {
+  font-size: 1.25em;
+}
+
+.worksheet > ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  margin-bottom: 80px;
+}
+
+.worksheet > ol li > ol {
+  list-style-type: lower-alpha;
+}
+
+.worksheet > ol > li {
+  counter-increment: my-awesome-counter;
+}
+
+.worksheet > ol > li::before {
+  float: left;
+  position: relative;
+  top: 0.7em;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+  content: counter(my-awesome-counter) ". ";
+  font-weight: bold;
+}
+
+.copy-block {
+  margin-top: 80px;
+  position: relative;
+  background-color: #f7f3e0;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.copy-block h2 {
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-top: none;
+  padding-top: none;
+}
+
+.copy-block ol li,
+.copy-block ul li,
+.copy-block p,
+.copy-block ol,
+.copy-block ul {
+  font-size: 0.95em;
+  margin-bottom: 0px;
+}
+
+.copy-block h2:first-of-type {
+  margin-top: 0px;
+}
+
+.copy-block::before {
+  right: 10px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.308);
+  position: absolute;
+  font-size: 1em;
+  content: "copy/paste";
 }
