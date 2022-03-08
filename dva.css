@@ -559,6 +559,7 @@
   padding: 10px;
   font-size: 0.95em;
   border-radius: 10px;
+  margin-bottom: 10px !important;
 }
 
 .dva .box {
@@ -1035,46 +1036,71 @@
   border-top: none !important;
 }
 
-.worksheet h2 {
-  font-size: 1.25em;
+.discussions .dva {
+  padding: 0px !important;
 }
 
-.worksheet > ol {
-  list-style: none;
-  counter-reset: my-awesome-counter;
-  margin-bottom: 80px;
+.worksheet {
+  counter-reset: ws-counter;
 }
 
-.worksheet > ol li > ol {
-  list-style-type: lower-alpha;
-}
-
-.worksheet > ol > li {
-  counter-increment: my-awesome-counter;
-}
-
-.worksheet > ol > li::before {
-  float: left;
+.worksheet > h2 {
+  counter-increment: ws-counter;
+  padding-left: 1.5em;
   position: relative;
-  top: 0.7em;
-  margin-right: 0.5em;
-  font-size: 1.2em;
-  content: counter(my-awesome-counter) ". ";
-  font-weight: bold;
+  font-size: 2em;
+  border-top: none;
+  font-size: 1.25em;
+  border-top: none;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.worksheet > h2:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.worksheet > h2::before {
+  content: counter(ws-counter);
+  position: absolute;
+  font-size: 0.75em;
+  color: white;
+  left: 0;
+  top: 13px;
+  line-height: 99%;
+  background-color: black;
+  width: 1.5em;
+  height: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.worksheet ol {
+  padding-left: 2em;
 }
 
 .copy-block {
-  margin-top: 80px;
+  margin-top: 40px;
   position: relative;
   background-color: #f7f3e0;
   padding: 30px;
+  padding-top: 60px;
   border-radius: 10px;
 }
 
 .copy-block h2 {
   font-size: 1em;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 0;
   border-top: none;
   padding-top: none;
 }
@@ -1084,6 +1110,7 @@
 .copy-block p,
 .copy-block ol,
 .copy-block ul {
+  margin-top: 0;
   font-size: 0.95em;
   margin-bottom: 0px;
 }
@@ -1093,10 +1120,15 @@
 }
 
 .copy-block::before {
-  right: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 10px;
-  color: rgba(0, 0, 0, 0.308);
+  color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 10px;
+  border-radius: 5px;
   position: absolute;
-  font-size: 1em;
-  content: "copy/paste";
+  font-size: 1;
+  content: "Copy/Paste";
 }
