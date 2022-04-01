@@ -653,12 +653,17 @@
 }
 
 .dva .columnBlock > div {
+  width: 46%;
+  margin-bottom: 50px;
+}
+
+.dva .columnBlock.count-3 > div {
   width: 30%;
 }
 
 @media only screen and (max-width: 950px) {
-  .dva .columnBlock > div {
-    width: 48%;
+  .dva .columnBlock > div, .dva .columnBlock.count-3 > div {
+    width: 46%;
   }
 }
 
@@ -669,7 +674,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .dva .columnBlock > div {
+  .dva .columnBlock > div, .dva .columnBlock.count-3 > div {
     width: 100%;
   }
 }
@@ -1027,24 +1032,11 @@
   }
 }
 
-.assignments .dva {
-  padding: 10px;
-}
-
-.assignments .dva > *:first-child {
-  margin-top: 0px !important;
-  border-top: none !important;
-}
-
-.discussions .dva {
-  padding: 0px !important;
-}
-
-.worksheet {
+.dva .worksheet {
   counter-reset: ws-counter;
 }
 
-.worksheet > h2 {
+.dva .worksheet > h2 {
   counter-increment: ws-counter;
   padding-left: 1.5em;
   position: relative;
@@ -1056,11 +1048,11 @@
   margin-bottom: 10px;
 }
 
-.worksheet > h2:not(:first-of-type) {
+.dva .worksheet > h2:not(:first-of-type) {
   margin-top: 40px;
 }
 
-.worksheet > h2::before {
+.dva .worksheet > h2::before {
   content: counter(ws-counter);
   position: absolute;
   font-size: 0.75em;
@@ -1083,43 +1075,52 @@
   border-radius: 5px;
 }
 
-.worksheet ol {
+.dva .worksheet ol {
   padding-left: 2em;
 }
 
-.copy-block {
+.dva .copy-block {
   margin-top: 40px;
   position: relative;
   background-color: #f7f3e0;
   padding: 30px;
-  padding-top: 60px;
+  padding-top: 125px;
   border-radius: 10px;
 }
 
-.copy-block h2 {
-  font-size: 1em;
-  margin-top: 20px;
+.dva .copy-block h2:not :first-child {
+  margin-top: 40px;
+}
+
+.dva .copy-block h2 {
+  font-size: 1.5em;
   margin-bottom: 5px;
   padding: 0;
   border-top: none;
   padding-top: none;
 }
 
-.copy-block ol li,
-.copy-block ul li,
-.copy-block p,
-.copy-block ol,
-.copy-block ul {
+.dva .copy-block h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.dva .copy-block ol li,
+.dva .copy-block ul li,
+.dva .copy-block p,
+.dva .copy-block ol,
+.dva .copy-block ul {
   margin-top: 0;
   font-size: 0.95em;
   margin-bottom: 0px;
 }
 
-.copy-block h2:first-of-type {
+.dva .copy-block h2:first-of-type {
   margin-top: 0px;
 }
 
-.copy-block::before {
+.dva .copy-block::before {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1131,4 +1132,17 @@
   position: absolute;
   font-size: 1;
   content: "Copy/Paste";
+}
+
+.assignments .dva {
+  padding: 10px;
+}
+
+.assignments .dva > *:first-child {
+  margin-top: 0px !important;
+  border-top: none !important;
+}
+
+.discussions .dva {
+  padding: 0px !important;
 }
