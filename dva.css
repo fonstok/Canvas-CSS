@@ -44,6 +44,73 @@
   clear: both;
 }
 
+.dva .imgShell {
+  width: 90%;
+  padding-top: 56.25%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 5px rgba(187, 187, 187, 0.712);
+          box-shadow: 5px 5px 5px rgba(187, 187, 187, 0.712);
+  border-radius: 5px;
+  margin-bottom: 40px;
+  border: 1px solid #555;
+  background-color: black;
+}
+
+.dva .imgShell.medium {
+  padding-top: 39.375%;
+  width: 70%;
+}
+
+.dva .imgShell.small {
+  padding-top: 28.125%;
+  width: 50%;
+}
+
+.dva .imgShell img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 105%;
+  height: auto;
+}
+
+.dva .imgShell.top img {
+  top: 0%;
+  -webkit-transform: translateX(-50%) translateY(0);
+          transform: translateX(-50%) translateY(0);
+}
+
+.dva .imgShell.left img {
+  left: 0%;
+  top: 0%;
+  -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+}
+
+.dva .imgShell.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dva .imgShell.background img {
+  left: -10000em;
+}
+
+.dva .imgShell.background.top {
+  background-position: top center;
+}
+
+.dva .imgShell.background.left {
+  background-position: top left;
+}
+
 .dva .imgHold {
   display: block;
   width: 60%;
@@ -208,6 +275,10 @@
   .dva .imgHold.small {
     width: 60%;
   }
+  .dva .imgShell.small {
+    padding-top: 33.75%;
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -217,6 +288,14 @@
   .dva .imgHold.small {
     width: 100%;
     height: auto;
+  }
+  .dva .imgShell.medium {
+    padding-top: 56.25%;
+    width: 100%;
+  }
+  .dva .imgShell.small {
+    padding-top: 56.25%;
+    width: 100%;
   }
 }
 
@@ -556,6 +635,7 @@
   padding: 10px;
   font-size: 0.95em;
   border-radius: 10px;
+  margin-top: 100px;
   margin-bottom: 10px !important;
 }
 
@@ -1038,6 +1118,13 @@
 
 .dva .worksheet {
   counter-reset: ws-counter;
+  margin-left: -10px;
+}
+
+.dva .worksheet p,
+.dva .worksheet h3,
+.dva .worksheet h4 {
+  margin-left: 10px;
 }
 
 .dva .worksheet > h2 {
@@ -1045,14 +1132,14 @@
   padding-left: 1.5em;
   position: relative;
   border-top: none;
-  font-size: 1.25em;
+  font-size: 1.35em;
   border-top: none;
   margin: 0;
   margin-bottom: 10px;
 }
 
 .dva .worksheet > h2:not(:first-of-type) {
-  margin-top: 40px;
+  margin-top: 3em;
 }
 
 .dva .worksheet > h2::before {
@@ -1082,8 +1169,13 @@
   padding-left: 2em;
 }
 
+.dva h3 {
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
 .dva .copy-block {
-  margin-top: 40px;
+  margin: 40px 0;
   position: relative;
   background-color: #f7f3e0;
   padding: 30px;
@@ -1123,7 +1215,7 @@
   margin-top: 0px;
 }
 
-.dva .copy-block::before {
+.dva .copy-block::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1144,8 +1236,4 @@
 .assignments .dva > *:first-child {
   margin-top: 0px !important;
   border-top: none !important;
-}
-
-.discussions .dva {
-  padding: 0px !important;
 }
