@@ -1118,7 +1118,6 @@
 
 .dva .worksheet {
   counter-reset: ws-counter;
-  margin-left: -10px;
 }
 
 .dva .worksheet p,
