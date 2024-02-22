@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .dva:last-of-type {
   padding-bottom: 150px;
 }
@@ -7,27 +8,23 @@
           box-sizing: border-box;
   margin-top: 0px;
 }
-
 .dva > *:first-child:not(.top-banner) {
   margin-top: 40px;
 }
-
 .dva a.btn {
-  border: 2px solid #2b8fc9;
+  border: 2px solid rgb(43, 143, 201);
   background-color: #fff;
   display: inline-block;
-  color: #2b8fc9;
+  color: rgb(43, 143, 201);
   border-radius: 8px;
   padding: 8px 10px;
   margin: 0 5px;
   line-height: 99%;
   text-decoration: none;
 }
-
 .dva a.btn.upper {
   text-transform: uppercase;
 }
-
 .dva a.btn:hover {
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
@@ -35,7 +32,6 @@
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
-
 .dva .float-fix:after {
   content: ".";
   visibility: hidden;
@@ -43,7 +39,6 @@
   height: 0;
   clear: both;
 }
-
 .dva .imgShell {
   width: 90%;
   padding-top: 56.25%;
@@ -58,17 +53,14 @@
   border: 1px solid #555;
   background-color: black;
 }
-
 .dva .imgShell.medium {
   padding-top: 39.375%;
   width: 70%;
 }
-
 .dva .imgShell.small {
   padding-top: 28.125%;
   width: 50%;
 }
-
 .dva .imgShell img {
   position: absolute;
   display: block;
@@ -79,38 +71,31 @@
   width: 105%;
   height: auto;
 }
-
 .dva .imgShell.top img {
   top: 0%;
   -webkit-transform: translateX(-50%) translateY(0);
           transform: translateX(-50%) translateY(0);
 }
-
 .dva .imgShell.left img {
   left: 0%;
   top: 0%;
   -webkit-transform: translateX(0) translateY(0);
           transform: translateX(0) translateY(0);
 }
-
 .dva .imgShell.background {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .dva .imgShell.background img {
   left: -10000em;
 }
-
 .dva .imgShell.background.top {
   background-position: top center;
 }
-
 .dva .imgShell.background.left {
   background-position: top left;
 }
-
 .dva .imgHold {
   display: block;
   width: 60%;
@@ -123,48 +108,39 @@
   border: 1px solid #555;
   max-width: 90%;
 }
-
 .dva .imgHold.no-border {
   border: none;
 }
-
 .dva .imgHold.no-shadow {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
-
 .dva .imgHold.left {
   margin: 0 0;
 }
-
 .dva .imgHold.medium {
   width: 60%;
   height: auto;
 }
-
 .dva .imgHold.small {
   width: 30%;
   height: auto;
 }
-
 .dva .imgHold.large {
   width: 100%;
   height: auto;
 }
-
 .dva .imgHold img {
   width: 102%;
   height: auto;
 }
-
 .dva li .imgHold {
   margin-top: 40px;
 }
-
 .dva .top-image {
   position: relative;
   min-height: 30%;
-  background-color: #ab2929;
+  background-color: rgb(171, 41, 41);
   padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,15 +152,12 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .dva .top-image img {
   display: block;
 }
-
 .dva img.border {
-  border: 4px solid #afbcbe;
+  border: 4px solid rgb(175, 188, 190);
 }
-
 .dva .img-zone {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -192,28 +165,23 @@
   max-width: 400px;
   min-width: 200px;
 }
-
 .dva .img-zone.left, .dva .img-zone.right {
   margin-bottom: 30px;
 }
-
 .dva .img-zone.left {
   float: left;
   margin-right: 30px;
 }
-
 .dva .img-zone.right {
   float: right;
   margin-left: 30px;
 }
-
 .dva .img-zone img {
   display: block;
   margin: 0px !important;
   width: 100%;
   height: auto;
 }
-
 .dva .img-zone .caption {
   display: block;
   margin-top: 10px;
@@ -224,7 +192,6 @@
   padding: 8px;
   background-color: rgba(148, 148, 148, 0.1);
 }
-
 .dva .text-image {
   margin-top: 48px;
   display: -webkit-box;
@@ -237,7 +204,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .dva .text-image h2:first-child,
 .dva .text-image h3:first-child,
 .dva .text-image h4:first-child,
@@ -245,32 +211,26 @@
   margin-top: 0px;
   border-top: none;
 }
-
 .dva .text-image .img-zone {
   display: block;
   width: 28%;
 }
-
 .dva .text-image .text-zone {
   width: 70%;
 }
-
 .dva .text-image.right {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-
 .dva .text-image.right .img-zone {
   margin-right: 0px;
   margin-left: 40px;
 }
-
 .dva h2 + .text-image {
   margin-top: 0px;
 }
-
 @media only screen and (max-width: 950px) {
   .dva .imgHold.small {
     width: 60%;
@@ -280,7 +240,6 @@
     width: 60%;
   }
 }
-
 @media only screen and (max-width: 750px) {
   .dva .imgHold.medium {
     width: 100%;
@@ -298,7 +257,6 @@
     width: 100%;
   }
 }
-
 .dva .icon-h {
   position: relative;
   padding-top: 5px;
@@ -312,14 +270,13 @@
   font-weight: normal;
   line-height: 90%;
 }
-
 .dva .icon-h:before {
   font-family: FontAwesome;
   content: "\f111";
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   color: #ffffff;
-  background-color: #a31616;
+  background-color: rgb(163, 22, 22);
   padding: 5px;
   position: relative;
   left: -10px;
@@ -337,81 +294,87 @@
   border-radius: 50%;
   line-height: 10%;
 }
-
 .dva .charcoal:before {
   background-color: #333;
 }
-
 .dva .gold:before {
-  background-color: #b49720;
+  background-color: rgb(180, 151, 32);
 }
-
 .dva .silver:before {
-  background-color: #596566;
+  background-color: rgb(89, 101, 102);
 }
-
 .dva .reading:before,
 .dva .book:before {
   content: "\f02d";
 }
-
 .dva .assignment:before,
 .dva .bookmark:before {
   content: "\f02e";
 }
-
 .dva .task:before,
 .dva .pen-nib:before {
   content: url(http://dva.musites.org/icons/pen-nib.svg);
 }
-
 .dva .requirement:before,
 .dva .check:before {
   content: "\f00c";
 }
-
 .dva .submit:before,
 .dva .get:before {
   content: url(http://dva.musites.org/icons/get-app.svg);
 }
-
 .dva .objective:before,
 .dva .bullseye:before {
   content: "\f140";
 }
-
 .dva .respond:before,
 .dva .chat:before {
   content: "\f27a";
   -webkit-transform: scale(-0.8, 0.8);
           transform: scale(-0.8, 0.8);
 }
-
 .dva .post:before,
 .dva .pencil:before {
   content: url(http://dva.musites.org/icons/pencil-alt.svg);
 }
-
 .dva .quiz:before,
 .dva .rocket:before {
   content: "\f135";
 }
-
 .dva .lesson:before,
 .dva .notes:before {
   content: url(http://dva.musites.org/icons/speaker-notes.svg);
 }
-
 .dva .project:before,
 .dva .brush:before {
   content: "\f1fc";
 }
-
 .dva .reply:before,
 .dva .chat-left:before {
   content: "\f27a";
 }
-
+.dva .box {
+  background-color: #f5f2f0;
+  padding: 25px 30px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 5px;
+  color: black;
+  border: 1px solid #999;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+}
+.dva .box.blue {
+  border: 1px solid;
+  border-color: rgba(14, 185, 185, 0.8);
+  background-color: rgba(0, 255, 255, 0.25);
+}
+.dva .box.purple {
+  border-color: rgba(216, 91, 240, 0.8);
+  background-color: rgba(207, 37, 241, 0.25);
+}
+.dva .box.orange {
+  border-color: rgba(216, 148, 0, 0.8);
+  background-color: rgba(255, 174, 0, 0.25);
+}
 .dva p.call-out,
 .dva .call-out {
   margin-top: 0px !important;
@@ -419,43 +382,36 @@
   line-height: 180%;
   color: #333;
 }
-
 .dva p.call-out.box,
 .dva .call-out.box {
   margin: 0px 0px 20px 0px;
 }
-
 .dva p.call-out.no-line,
 .dva .call-out.no-line {
   border-left: none;
 }
-
 .dva p.call-out.line,
 .dva .call-out.line {
   border-left: none;
-  border-left: 4px solid #596566;
+  border-left: 4px solid rgb(89, 101, 102);
   padding-left: 20px;
 }
-
 .dva p.call-out p:last-child,
 .dva .call-out p:last-child {
   margin-bottom: 0 !important;
 }
-
 .dva p.intro,
 .dva .intro {
-  font-size: 145%;
+  font-size: 1.2em;
   margin-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 40px;
 }
-
 .dva p,
 .dva li {
   font-size: 1.1em;
   line-height: 1.8em;
 }
-
 .dva h1,
 .dva h2,
 .dva h3,
@@ -466,7 +422,6 @@
   margin-bottom: 20px;
   font-weight: normal;
 }
-
 .dva h2 {
   font-weight: 700;
   border-top: solid rgba(238, 238, 238, 0.95) 2px;
@@ -476,121 +431,102 @@
   line-height: 100%;
   margin-top: 70px;
 }
-
 .dva h3 {
   font-weight: 700;
   position: relative;
   font-size: 1.4em;
 }
-
 .dva h4 {
   font-size: 1.25em !important;
   margin-bottom: 20px !important;
 }
-
 .dva h5 {
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 .dva h6 {
   font-size: 0.9em;
   font-weight: 400;
   font-style: italic;
 }
-
 .dva h2 + h2 {
   border-top: none transparent 0px;
   margin-top: 24px;
 }
-
 .dva h2 + h3,
 .dva h3 + h4,
 .dva h4 + h5,
 .dva h5 + h6 {
   margin-top: 0 !important;
 }
-
 .dva .columns,
 .dva .c-count-3 {
   -webkit-columns: 3;
+     -moz-columns: 3;
           columns: 3;
 }
-
 .dva .c-count-2 {
   -webkit-columns: 2;
+     -moz-columns: 2;
           columns: 2;
 }
-
 .dva .c-count-4 {
   -webkit-columns: 4;
+     -moz-columns: 4;
           columns: 4;
 }
-
 .dva sup {
   margin: 0px;
   position: relative;
   font-size: 10px;
   left: 2px;
 }
-
 .dva .t-syllabus {
   width: 90%;
   max-width: 1000px;
   border: 1px solid #666;
 }
-
 .dva .t-syllabus thead {
   background-color: #eee;
   color: #555;
 }
-
 .dva .t-syllabus td,
 .dva .t-syllabus th {
   padding: 8px;
   border: 0.5px solid #555;
 }
-
 .dva .t-syllabus th {
   font-weight: bold;
   text-align: left;
 }
-
 .dva .t-syllabus .total {
   font-weight: bold;
   text-align: right;
 }
-
 .dva .t-syllabus.weight td:nth-child(1),
 .dva .t-syllabus.weight th:nth-child(1) {
   width: 10%;
 }
-
 .dva .t-syllabus.weight td:nth-child(3),
 .dva .t-syllabus.weight th:nth-child(3) {
   width: 20%;
 }
-
 .dva .t-syllabus.scale td:nth-child(1),
 .dva .t-syllabus.scale th:nth-child(1) {
   width: 7%;
 }
-
 .dva .t-syllabus.scale td:nth-child(2),
 .dva .t-syllabus.scale th:nth-child(2) {
   width: 18%;
 }
-
 .dva .t-syllabus.scale td:nth-child(3),
 .dva .t-syllabus.scale th:nth-child(3) {
   width: 74%;
 }
-
 .dva .fine-print {
   padding: 10px;
 }
-
 .dva .fine-print p {
   font-size: 0.7em;
   line-height: 1.5em;
@@ -598,17 +534,60 @@
   margin-left: 8px;
   text-indent: 0;
 }
-
 .dva .fine-print p sup {
   margin: 0px;
   position: relative;
   left: -8px;
 }
-
+.dva details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 1em;
+  max-width: 98% !important;
+  font-family: sans-serif;
+  margin-top: 0;
+  margin-bottom: 1em;
+  position: relative;
+}
+.dva details summary {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1.25em;
+  margin: 0;
+  line-height: 95%;
+  padding: 0;
+  list-style-type: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dva details summary:after {
+  content: "+";
+  color: #555;
+  position: absolute;
+  right: 1em;
+}
+.dva details[open] {
+  padding: 2em;
+}
+.dva details[open] summary {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1em;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 1.5em;
+  color: #aaa !important;
+}
+.dva details[open] summary:after {
+  content: "-";
+}
+.dva details[open] h2:first-of-type {
+  border-top: none;
+  margin-top: 1em;
+}
 .dva .top-image {
   position: relative;
   min-height: 30%;
-  background-color: #ab2929;
+  background-color: rgb(171, 41, 41);
   padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,62 +599,45 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .dva .top-image img {
   display: block;
 }
-
 .dva .note {
   font-style: italic;
   font-size: 0.9em;
 }
-
 .dva .instructions {
-  background-color: #a5fde0;
+  background-color: rgb(165, 253, 224);
   padding: 10px;
   font-size: 0.95em;
   border-radius: 10px;
   margin-top: 100px;
   margin-bottom: 10px !important;
 }
-
-.dva .box {
-  background-color: #f5f2f0;
-  padding: 30px;
-  margin: 20px 10px 20px 10px;
-  border-radius: 5px;
-  color: black;
-  text-shadow: 2px 2px 1px #ffffff;
-}
-
 .dva .hl,
 .dva mark {
-  border-bottom: 1px #e2d301 solid;
+  border-bottom: 1px rgb(226, 211, 1) solid;
   background-color: rgba(251, 255, 0, 0.5);
   border-radius: 3px;
   padding: 1px 2px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.85);
 }
-
 .dva .hl.blue,
 .dva mark.blue {
   border-color: rgba(14, 185, 185, 0.8);
   background-color: rgba(0, 255, 255, 0.5);
 }
-
 .dva .hl.purple,
 .dva mark.purple {
   border-color: rgba(207, 37, 241, 0.8);
   background-color: rgba(207, 37, 241, 0.5);
 }
-
 .dva .hl.orange,
 .dva mark.orange {
   border-color: rgba(216, 148, 0, 0.8);
   background-color: rgba(255, 174, 0, 0.5);
 }
-
 .dva .video {
   position: relative;
   padding-top: 56.25%;
@@ -686,17 +648,14 @@
   border: 4px solid #000;
   background-color: #000;
 }
-
 .dva .video.med {
   padding-top: 39.375%;
   width: 70%;
 }
-
 .dva .video.small {
   padding-top: 28.125%;
   width: 50%;
 }
-
 .dva .video iframe {
   position: absolute;
   top: 0;
@@ -704,12 +663,10 @@
   width: 100%;
   height: 100%;
 }
-
 .dva .res-img {
   position: relative;
   padding-top: 100%;
 }
-
 .dva .res-img .img-box {
   position: absolute;
   top: 0;
@@ -717,7 +674,6 @@
   width: 100%;
   height: 100%;
 }
-
 .dva .columnBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,22 +684,18 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .dva .columnBlock > div {
   width: 46%;
   margin-bottom: 50px;
 }
-
 .dva .columnBlock.count-3 > div {
   width: 30%;
 }
-
 @media only screen and (max-width: 950px) {
   .dva .columnBlock > div, .dva .columnBlock.count-3 > div {
     width: 46%;
   }
 }
-
 @media only screen and (max-width: 750px) {
   .dva .columnBlock {
     -webkit-box-orient: vertical;
@@ -755,103 +707,93 @@
     width: 100%;
   }
 }
-
 .dva ul,
 .dva ol,
 .dva p {
   margin-bottom: 26px;
 }
-
 .dva .line-top {
   border-top: dotted 1px #000;
 }
-
 .dva table,
 .dva td {
   border-collapse: collapse;
   border: 1px #ddd solid;
   margin-bottom: 20px;
 }
-
 .dva table {
   width: 90%;
   font-size: 85%;
+  border: 2px solid black;
 }
-
+.dva table th {
+  font-weight: 700;
+  background-color: #555;
+  color: #fff;
+}
 .dva table td {
   padding: 10px;
 }
-
 .dva table td p {
   margin: 0px;
   margin-bottom: 10px;
   line-height: 150%;
 }
-
 .dva table td p:last-child {
   margin-bottom: 0px;
 }
-
 .dva table.tbg {
   width: 100%;
   margin-top: 80px;
   margin-bottom: 80px;
-  border: 4px solid #c7c7c7;
+  border: 4px solid rgb(199, 199, 199);
 }
-
 .dva table.tbg tr {
   border-bottom: 1px solid rgba(54, 54, 54, 0.308);
 }
-
 .dva table.tbg tr:last-of-type {
   border: 0;
 }
-
 .dva table.tbg th {
   text-transform: uppercase;
   text-align: left;
   color: rgba(8, 8, 8, 0.65);
 }
-
-.dva table.tbg td, .dva table.tbg th {
+.dva table.tbg td,
+.dva table.tbg th {
   width: 33.333%;
   padding: 12px;
   border-right: 1px solid rgba(54, 54, 54, 0.308);
 }
-
-.dva table.tbg td:nth-child(1), .dva table.tbg th:nth-child(1) {
-  background-color: #e6e6e6;
+.dva table.tbg td:nth-child(1),
+.dva table.tbg th:nth-child(1) {
+  background-color: rgb(230, 230, 230);
 }
-
-.dva table.tbg td:nth-child(2), .dva table.tbg th:nth-child(2) {
+.dva table.tbg td:nth-child(2),
+.dva table.tbg th:nth-child(2) {
   background-color: rgba(255, 151, 151, 0.849);
 }
-
-.dva table.tbg td:nth-child(3), .dva table.tbg th:nth-child(3) {
+.dva table.tbg td:nth-child(3),
+.dva table.tbg th:nth-child(3) {
   background-color: rgba(188, 240, 192, 0.822);
   border-right: 0px none transparent;
 }
-
 .dva body {
   counter-increment: section-counter;
 }
-
 .dva ul,
 .dva ol,
 .dva table {
   margin-top: 10px !important;
 }
-
 .dva li {
   margin-bottom: 0.5em;
 }
-
 .dva ol.round {
   counter-reset: my-counter;
   list-style-type: none;
   padding-left: 1em;
 }
-
 .dva ol.round > li {
   white-space: normal;
   padding-left: 1.3em;
@@ -859,7 +801,6 @@
   position: relative;
   line-height: 1.5em;
 }
-
 .dva ol.round > li:before {
   font-weight: bold;
   background-color: #333;
@@ -884,9 +825,8 @@
   top: 0.125em;
   line-height: 99%;
 }
-
 .dva ul li::before {
-  content: "\2B1D";
+  content: "⬝";
   color: #bbb;
   font-size: 1.5em;
   display: inline-block;
@@ -895,7 +835,6 @@
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
-
 .dva ul ul,
 .dva ol ul {
   margin-bottom: 2em;
@@ -904,41 +843,34 @@
   font-size: 0.85em;
   color: #565560;
 }
-
 .dva ul ul li,
 .dva ol ul li {
   line-height: 1.4em;
   margin-bottom: 0.25em;
 }
-
 .dva ul ul li::before,
 .dva ol ul li::before {
-  content: "\2043";
+  content: "⁃";
 }
-
 .dva ul.check-list li::before {
   margin-left: -1em;
   font-family: FontAwesome;
   content: "\f00c";
-  color: #0fb8cb;
+  color: rgb(15, 184, 203);
   display: inline-block;
   width: 1em;
   -webkit-transform: translate(0em, 0em) scale(0.75);
           transform: translate(0em, 0em) scale(0.75);
 }
-
 .dva ul.check-list li {
   margin-bottom: 1em;
 }
-
 .dva ul {
   list-style-type: none;
 }
-
 .dva ul.qa, .dva ul.ps {
   margin-left: 100px;
 }
-
 .dva ul.qa li::before, .dva ul.ps li::before {
   position: absolute;
   width: auto;
@@ -960,35 +892,27 @@
   color: #fff;
   padding: 0 10px;
 }
-
 .dva ul.qa li:nth-child(odd)::before, .dva ul.ps li:nth-child(odd)::before {
-  background-color: #37436b;
+  background-color: rgb(55, 67, 107);
 }
-
 .dva ul.qa li:nth-child(even), .dva ul.ps li:nth-child(even) {
   margin-bottom: 3em;
 }
-
 .dva ul.qa li:nth-child(even)::before, .dva ul.ps li:nth-child(even)::before {
-  background-color: #eba63f;
+  background-color: rgb(235, 166, 63);
 }
-
 .dva ul.qa li:nth-child(odd)::before {
   content: "Question";
 }
-
 .dva ul.qa li:nth-child(even)::before {
   content: "Answer";
 }
-
 .dva ul.ps li:nth-child(odd)::before {
   content: "Problem";
 }
-
 .dva ul.ps li:nth-child(even)::before {
   content: "Solution";
 }
-
 .dva ul.pills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,7 +921,6 @@
       flex-wrap: wrap;
   font-size: 99%;
 }
-
 .dva ul.pills li {
   border-color: #333;
   border-style: solid;
@@ -1008,59 +931,57 @@
   color: #333;
   line-height: 102%;
 }
-
 .dva ul.pills li::before {
   content: none;
 }
-
 .dva ul.pills.upper li {
   text-transform: uppercase;
 }
-
 .dva ul.pills.red li {
-  border-color: #a31616;
+  border-color: rgb(163, 22, 22);
 }
-
 .dva ul.pills.gold li {
-  border-color: #b49720;
+  border-color: rgb(180, 151, 32);
 }
-
 .dva ul.pills.silver li {
-  border-color: #596566;
+  border-color: rgb(89, 101, 102);
 }
-
 .dva ul.pills.charcoal li {
   border-color: #333;
 }
-
 @media only screen and (max-width: 950px) {
   .dva .columns,
   .dva .c-count-3 {
     -webkit-columns: 2;
+       -moz-columns: 2;
             columns: 2;
   }
   .dva .c-count-2 {
     -webkit-columns: 1;
+       -moz-columns: 1;
             columns: 1;
   }
   .dva .c-count-4 {
     -webkit-columns: 3;
+       -moz-columns: 3;
             columns: 3;
   }
 }
-
 @media only screen and (max-width: 750px) {
   .dva .columns,
   .dva .c-count-3 {
     -webkit-columns: 1;
+       -moz-columns: 1;
             columns: 1;
   }
   .dva .c-count-2 {
     -webkit-columns: 1;
+       -moz-columns: 1;
             columns: 1;
   }
   .dva .c-count-4 {
     -webkit-columns: 1;
+       -moz-columns: 1;
             columns: 1;
   }
   .dva .left {
@@ -1115,17 +1036,14 @@
     margin: 4px 3px 4px 3px;
   }
 }
-
 .dva .worksheet {
   counter-reset: ws-counter;
 }
-
 .dva .worksheet p,
 .dva .worksheet h3,
 .dva .worksheet h4 {
   margin-left: 10px;
 }
-
 .dva .worksheet > h2 {
   counter-increment: ws-counter;
   padding-left: 1.5em;
@@ -1136,11 +1054,9 @@
   margin: 0;
   margin-bottom: 10px;
 }
-
 .dva .worksheet > h2:not(:first-of-type) {
   margin-top: 3em;
 }
-
 .dva .worksheet > h2::before {
   content: counter(ws-counter);
   position: absolute;
@@ -1163,34 +1079,28 @@
           align-items: center;
   border-radius: 5px;
 }
-
 .dva .worksheet > h3 {
   margin-bottom: 0.5em;
   font-size: 1.3em;
 }
-
 .dva .worksheet > h4 {
   margin-bottom: 0.5em;
   font-size: 1.2em;
 }
-
 .dva .worksheet ol {
   padding-left: 2em;
 }
-
 .dva .copy-block {
   margin: 40px 0;
   position: relative;
-  background-color: #f7f3e0;
+  background-color: rgb(247, 243, 224);
   padding: 30px;
   padding-top: 125px;
   border-radius: 10px;
 }
-
 .dva .copy-block h2:not :first-child {
   margin-top: 40px;
 }
-
 .dva .copy-block h2 {
   font-size: 1.5em;
   margin-bottom: 5px;
@@ -1198,13 +1108,11 @@
   border-top: none;
   padding-top: none;
 }
-
 .dva .copy-block h3 {
   margin-top: 30px;
   margin-bottom: 15px;
   font-size: 1em;
 }
-
 .dva .copy-block ol li,
 .dva .copy-block ul li,
 .dva .copy-block p,
@@ -1214,11 +1122,9 @@
   font-size: 0.95em;
   margin-bottom: 0px;
 }
-
 .dva .copy-block h2:first-of-type {
   margin-top: 0px;
 }
-
 .dva .copy-block::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1236,8 +1142,7 @@
 .assignments .dva {
   padding: 10px;
 }
-
 .assignments .dva > *:first-child {
   margin-top: 0px !important;
   border-top: none !important;
-}
+}/*# sourceMappingURL=dva.css.map */
